@@ -1,0 +1,50 @@
+body {
+    background-image: url('./fondo login/fondo.jpg');  /* Establece una imagen de fondo */
+    background-size: cover;  /* Hace que la imagen de fondo cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed;  /* Fija la imagen de fondo para que no se desplace con el contenido */
+}
+
+.wrapper {
+    position: absolute;  /* Posiciona el contenedor de forma absoluta */
+    top: 50%;  /* Centra el contenedor verticalmente en la pantalla */
+    left: 50%;  /* Centra el contenedor horizontalmente en la pantalla */
+    transform: translate(-50%, -50%);  /* Ajusta la posición para que el centro del contenedor esté en el centro de la pantalla */
+    width: 450px;  /* Establece el ancho del contenedor */
+    height: 450px;  /* Establece la altura del contenedor */
+    text-align: center;  /* Centra el texto dentro del contenedor */
+    border: 1px solid rgb(223, 189, 205);  /* Añade un borde con color RGB alrededor del contenedor */
+    border-radius: 32px;  /* Redondea las esquinas del contenedor */
+    padding: 20px 30px;  /* Añade espacio interior al contenedor */
+    background: transparent;  /* Hace que el fondo del contenedor sea transparente */
+    backdrop-filter: blur(6px);  /* Aplica un desenfoque al fondo detrás del contenedor */
+    box-shadow: 5px 5px 10px 0 rgba(246, 194, 234, 0.989);  /* Añade una sombra al contenedor */
+}
+
+.wrapper h2 {
+    font-size: 40px;  /* Establece el tamaño de fuente del título */
+    color: #743b57;  /* Establece el color de la fuente del título */
+}
+
+.input-field input {
+    width: 60%;  /* Establece el ancho del campo de entrada */
+    padding: 12px;  /* Añade espacio interior al campo de entrada */
+    margin: 10px 0;  /* Añade margen superior e inferior al campo de entrada */
+    display: inline-block;  /* Muestra el campo de entrada como un elemento en línea */
+    border: none;  /* Elimina el borde predeterminado del campo de entrada */
+    border-bottom: 2px solid #929090;  /* Añade un borde inferior al campo de entrada */
+    box-sizing: border-box;  /* Incluye el padding y el borde en el ancho total del campo de entrada */
+    background-color: transparent;  /* Hace que el fondo del campo de entrada sea transparente */
+}
+
+.login {
+    font-size: 20px;  /* Establece el tamaño de fuente del botón de inicio de sesión */
+    padding: 10px 30px;  /* Añade espacio interior al botón de inicio de sesión */
+    border-radius: 50px;  /* Redondea las esquinas del botón de inicio de sesión */
+    background-color: #e8a7c6;  /* Establece el color de fondo del botón de inicio de sesión */
+    color: black;  /* Establece el color de la fuente del botón de inicio de sesión */
+}
+
+.input-field {
+    position: relative;  /* Establece la posición relativa para poder posicionar elementos hijos absolutamente */
+}

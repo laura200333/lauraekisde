@@ -1,0 +1,205 @@
+/* Establece un estilo base para todos los elementos, eliminando márgenes y rellenos predeterminados, 
+y utilizando el modelo de caja border-box para incluir bordes y rellenos en el ancho y alto del elemento */
+* {
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el borde y el relleno dentro del ancho y alto del elemento */
+}
+
+/* Define estilos para el cuerpo del documento: 
+establece la fuente 'Ubuntu', 
+limita el ancho máximo a 1200px y 
+centra el contenido automáticamente */
+body {
+    height: 105%; /* Asegura que el cuerpo y el html ocupen el 100% de la altura */
+    font-family: 'Ubuntu', sans-serif; /* Establece la fuente 'Ubuntu' para el texto del cuerpo */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-image: url('./fondo/fondo\ Glam.jpg.jpeg'); /* Establece la imagen de fondo */
+    background-size: cover; /* Cubre toda el área visible del cuerpo */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* Hace que las imágenes nunca excedan el ancho de su contenedor */
+img {
+    max-width: 100%; /* Establece el ancho máximo de las imágenes al 100% del contenedor */
+}
+
+/* Establece el encabezado para usar un diseño flexible, 
+centrando el contenido y añadiendo 30px de relleno alrededor */
+header {
+    display: flex; /* Utiliza el diseño flexbox para el encabezado */
+    align-items: center; /* Centra verticalmente los elementos dentro del encabezado */
+    padding: 30px; /* Añade 30 píxeles de relleno alrededor del encabezado */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del encabezado */
+}
+
+/* Define el estilo para el título del contenedor, 
+con 30px de relleno, un fondo gris claro, 
+margen inferior de 60px, color de texto oscuro y texto centrado */
+.container-title {
+    padding: 30px; /* Añade 30 píxeles de relleno alrededor del título del contenedor */
+    background-color: #eee; /* Establece un fondo gris claro para el título del contenedor */
+    margin-bottom: 60px; /* Añade un margen inferior de 60 píxeles al título del contenedor */
+    color: #222; /* Establece el color del texto a un tono oscuro */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Establece el contenedor principal para usar un diseño flexible, 
+con un espacio de 30px entre los elementos hijos y un margen inferior de 80px */
+main {
+    display: flex; /* Utiliza el diseño flexbox para el contenedor principal */
+    gap: 30px; /* Añade un espacio de 30 píxeles entre los elementos hijos */
+    margin-bottom: 80px; /* Añade un margen inferior de 80 píxeles al contenedor principal */
+}
+
+/* Define un contenedor de imagen con un fondo gris claro y 
+lo hace crecer para llenar el espacio disponible */
+.container-img {
+    background-color: #f7f7f9; /* Establece un fondo gris muy claro para el contenedor de la imagen */
+    flex: 1; /* Permite que el contenedor crezca para llenar el espacio disponible */
+}
+
+/* Define un contenedor de descripción que se organiza en una columna 
+y crece para llenar el espacio disponible */
+.container-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente los elementos */
+    text-align: center; /* Centra el texto horizontalmente dentro del contenedor */
+    padding: 20px; /* Ajusta el relleno según tu preferencia */
+}
+
+/* Define el título de la descripción para usar un diseño flexible, 
+centrando verticalmente los elementos y añadiendo un cursor de puntero */
+.title-description {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    cursor: pointer;
+    margin-bottom: 20px; /* Ajusta el margen según tu preferencia */
+}
+
+/* Establece el estilo para el encabezado dentro del título de la descripción, 
+con un peso de fuente ligero y color oscuro */
+.title-description h3 {
+    font-weight: 300;
+    color: #252525;
+}
+
+/* Define el texto de la descripción con relleno vertical de 20px 
+y un borde inferior gris claro */
+.text-description {
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+/* Establece el contenedor de productos relacionados con texto centrado 
+y un margen inferior de 30px */
+.container-related-products {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 30px; /* Añade un margen inferior de 30 píxeles al contenedor */
+}
+
+/* Define la lista de productos como una cuadrícula, 
+con 4 columnas iguales y un espacio de 25px entre los elementos */
+.card-list-products {
+    display: grid; /* Utiliza el diseño de cuadrícula para la lista de productos */
+    grid-template-columns: repeat(4, 1fr); /* Define una cuadrícula con 4 columnas iguales */
+    gap: 25px; /* Añade un espacio de 25 píxeles entre los elementos de la cuadrícula */
+}
+
+/* Define el estilo para cada tarjeta de producto, 
+haciendo que el cursor cambie a puntero y 
+organizando los elementos en una columna centrada */
+.card {
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre la tarjeta */
+    display: flex; /* Utiliza el diseño flexbox para la tarjeta */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos dentro de la tarjeta */
+}
+
+/* Define el estilo para las imágenes dentro de las tarjetas, 
+estableciendo una altura de 300px y una sombra ligera */
+.card-img img {
+    height: 300px; /* Establece una altura de 300 píxeles para las imágenes */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera a las imágenes */
+    border: 8px solid #f46feb; /* Añade un borde sólido de 2px de color gris claro */
+    border-radius: 8px; /* Añade esquinas redondeadas */
+    padding: 5px; /* Añade un pequeño relleno alrededor de la imagen */
+    box-sizing: border-box; /* Incluye el borde y el relleno dentro del ancho y alto del elemento */
+}
+
+/* Define el estilo para las imágenes dentro de las tarjetas, 
+estableciendo una altura de 300px y una sombra ligera */
+.card-img img {
+    height: 300px; /* Establece una altura de 300 píxeles para las imágenes */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Añade una sombra ligera a las imágenes */
+}
+
+/* Define el contenedor de información de la tarjeta, 
+organizando los elementos en una columna centrada */
+.info-card {
+    display: flex; /* Utiliza el diseño flexbox para el contenedor de información */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra horizontalmente los elementos dentro del contenedor */
+}
+
+/* Establece el estilo para el texto del producto, 
+con color oscuro, peso de fuente ligero, 
+interlineado de 1.4 y texto centrado */
+.text-product {
+    color: #252525; /* Establece el color del texto a un tono oscuro */
+    font-weight: 300; /* Establece un peso de fuente ligero para el texto */
+    line-height: 1.4; /* Establece el interlineado a 1.4 */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Define el estilo para los encabezados dentro del texto del producto, 
+heredando el color, peso de fuente y tamaño de 15px */
+.text-product h3 {
+    color: inherit; /* Hereda el color del contenedor principal */
+    font-weight: inherit; /* Hereda el peso de fuente del contenedor principal */
+    font-size: 15px; /* Establece el tamaño de la fuente a 15 píxeles */
+}
+
+/* Define el estilo para los párrafos dentro del texto del producto, 
+con color gris y tamaño de fuente de 13px */
+.text-product p {
+    color: #666; /* Establece el color del texto a un tono gris */
+    font-size: 13px; /* Establece el tamaño de la fuente a 13 píxeles */
+}
+
+/* Define el estilo para el precio del producto, 
+con color oscuro, peso de fuente fuerte y margen superior de 10px */
+.price {
+    color: #252525; /* Establece el color del texto a un tono oscuro */
+    font-weight: 700; /* Establece un peso de fuente fuerte para el texto */
+    margin-top: 10px; /* Añade un margen superior de 10 píxeles */
+}
+
+.Volver {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 10px; /* Espacio desde la parte superior */
+    right: 10px; /* Espacio desde la parte derecha */
+}
+
+.Volver button {
+    background-color: #f46feb; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Ubuntu', sans-serif; /* Fuente del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.Volver button:hover {
+    background-color: #f46feb; /* Color de fondo al pasar el cursor */
+}
+
+.Volver button:active {
+    background-color: #f46feb; /* Color de fondo al hacer clic */
+}

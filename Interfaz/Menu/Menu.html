@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Femenina</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Assets/Sin título.jpeg" alt="Logo">
+        </div>
+        <div class="user-info">
+            <span>Bienvenid@ Angie Ayala</span>
+        </div>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" name="query" placeholder="Buscar..." required>
+                <button type="submit">search</button>
+            </form>
+        </div>
+        <button class="notification-button">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C10.9 2 10 2.9 10 4V5.68C7.25 6.4 5.4 8.71 5.08 11.5L5 12V17L3 19V20H21V19L19 17V12C19 9.24 16.76 7 14 7H13V4C13 2.9 12.1 2 12 2ZM12 22C13.1 22 14 21.1 14 20H10C10 21.1 10.9 22 12 22Z" fill="#fff"/>
+        </svg>
+    </button>
+        <div class="admin-info">
+            <span>Administrador</span>
+            <span>Angie Ayala</span>
+        </div>
+        <button class="user-button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12ZM12 14C8.13401 14 2 16.067 2 20V22H22V20C22 16.067 15.866 14 12 14Z" fill="#fff"/>
+            </svg>
+        </button>
+        </div>
+    </header>
+    <nav>
+        <button>HOME</button>
+        <button>Glam femenina</button>
+        <select name="language" id="language">
+            <option value="" disabled>Facturas Guardadas</option>
+            <option value="" selected>Enero</option>
+            <option value="" selected>Febrero</option>
+            <option value="" selected>Marzo</option>
+            <option value="" selected>Abril</option>
+            <option value="" selected>Mayo</option>
+            <option value="" selected>Junio</option>
+            <option value="" selected>Julio</option>
+            <option value="" selected>Agosto</option>
+            <option value="" selected>Septiembre</option>
+            <option value="" selected>Octubre</option>
+            <option value="" selected>Noviembre</option>
+            <option value="" selected>Diciembre</option>
+        </select>
+    </nav>
+    <main>
+        <section class="categories">
+            <div class="container">
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Delineadores/delineadores.html"><button>Delineadores</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-07-05.png" alt="Delineadores">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Skincare/Skincare.html"><button>Skincare</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-05-56.png" alt="Skincare">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Sombra/Sombras.html"><button >Sombras</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-08-51.png" alt="Sombras">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Pestañas/Pestañas.html"><button>Cejas y Pestañas</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-02.png" alt="Pestañas">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Bases/bases.html"><button>Bases</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-24.png" alt="Bases">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Iluminador/Iluminador.html"><button>Iluminadores</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-35.png" alt="Iluminadores">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Variedades/Variedades.html"><button>Variedades</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-42.png" alt="Variedades">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Labiales/Labiales.html"><button>Labiales</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-54.png" alt="Accesorios">
+                </div>
+                <div class="category-item">
+                    <a href="/Interfaz/Productos/Cremas y Shampoos/CS.html"><button>Cremas y Shampo</button></a>
+                    <img src="Assets/Captura desde 2024-06-06 06-09-10.png" alt="Tratamiento de Cabello">
+                </div>
+            </div>
+        </section>
+        <section class="chart">
+        </section>
+        <div class="Volver">
+            <a href="/Login/Login.html" onclick="history.back()"><button>Cerrar Sesion</button></a>
+        </div>
+    <footer>
+        <p>© 2024 Glam Femenina</p>
+    </footer>
+</body>
+</html>

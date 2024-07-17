@@ -1,0 +1,189 @@
+body {
+    margin: 0; /* Elimina el margen por defecto del cuerpo */
+    font-family: 'Arial', sans-serif; /* Define la fuente para el cuerpo */
+    background-color: #fdecef; /* Establece el color de fondo del cuerpo */
+}
+
+header {
+    display: flex; /* Utiliza un contenedor flexible para el encabezado */
+    justify-content: space-between; /* Distribuye el contenido del encabezado con espacio entre ellos */
+    align-items: center; /* Alinea los elementos del encabezado al centro verticalmente */
+    background-color: #d79fa6; /* Color de fondo del encabezado */
+    padding: 1px; /* Relleno del encabezado */
+}
+
+header .logo img {
+    height: 40px; /* Altura de la imagen del logo */
+    border-radius: 50%; /* Hace que la imagen del logo sea circular */
+}
+
+header .user-info {
+    color: #fff; /* Color del texto de la información del usuario */
+    font-size: 1.0em; /* Tamaño de la fuente de la información del usuario */
+}
+
+header .admin-info {
+    color: #fff; /* Color del texto de la información del administrador */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+nav {
+    display: flex; /* Utiliza un contenedor flexible para la navegación */
+    justify-content: center; /* Centra los elementos de la navegación horizontalmente */
+    background-color: #f7c9cc; /* Color de fondo de la navegación */
+    padding: 5px; /* Relleno de la navegación */
+}
+
+nav button {
+    background-color: #f7c9cc; /* Color de fondo de los botones de navegación */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno de los botones de navegación */
+    margin: 0 200px; /* Margen horizontal de los botones de navegación */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1em; /* Tamaño de la fuente de los botones de navegación */
+    border-radius: 5px; /* Bordes redondeados de los botones de navegación */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+nav button:hover {
+    background-color: #f0b6bd; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+main {
+    padding: 50px; /* Relleno del contenedor principal */
+}
+
+.categories .container {
+    display: flex; /* Utiliza un contenedor flexible para las categorías */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-around; /* Distribuye los elementos de las categorías con espacio alrededor */
+}
+
+.category-item {
+    display: flex; /* Utiliza un contenedor flexible para cada elemento de categoría */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    width: 30%; /* Ancho de cada elemento de categoría */
+    text-align: center; /* Alinea el texto al centro */
+    margin-bottom: 1px; /* Margen inferior de cada elemento de categoría */
+    text-decoration: none; /* Sin decoración de texto */
+}
+
+.category-item button {
+    display: block; /* El botón se comporta como un elemento de bloque */
+    width: 100%; /* Ancho completo del botón */
+    padding: 1px; /* Relleno del botón */
+    margin-bottom: 1px; /* Margen inferior del botón */
+    background-color: #d79fa6; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    color: #fff; /* Color del texto del botón */
+    font-size: 1em; /* Tamaño de la fuente del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 200px; /* Bordes redondeados de los botones */
+    transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+.category-item button:hover {
+    background-color: #e09195; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
+.category-item img {
+    width: 100px; /* Ancho específico de la imagen */
+    height: 100px; /* Altura específica de la imagen */
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+footer {
+    text-align: center; /* Alinea el texto al centro */
+    padding: 10px; /* Relleno del pie de página */
+    background-color: #d79fa6; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior de la pantalla */
+    bottom: 0; /* Alinea el pie de página a la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+}
+
+select{
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno del select */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+select:focus{
+    outline: none; /* Sin contorno al enfocar */
+}
+
+.user-button {
+    width: 40px; /* Ancho del botón de usuario */
+    height: 40px; /* Altura del botón de usuario */
+    background-color: #f7c9cc; /* Color de fondo del botón de usuario */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    display: flex; /* Utiliza un contenedor flexible para el botón */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el cambio de color de fondo y la transformación */
+}
+
+.user-button:hover {
+    background-color: #ee2020; /* Color de fondo al pasar el cursor sobre el botón */
+    transform: scale(1.05); /* Escala el botón ligeramente al pasar el cursor */
+}
+
+.user-button svg {
+    width: 40%; /* Ancho del SVG dentro del botón de usuario */
+    height: 60%; /* Altura del SVG dentro del botón de usuario */
+}
+
+.notification-button {
+    width: 40px; /* Ancho del botón de notificación */
+    height: 40px; /* Altura del botón de notificación */
+    background-color: #fde5f7; /* Color de fondo del botón de notificación */
+    border: none; /* Sin borde */
+    border-radius: 50%; /* Hace que el botón sea circular */
+    display: flex; /* Utiliza un contenedor flexible para el botón */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para el cambio de color de fondo y la transformación */
+}
+
+.notification-button:hover {
+    background-color: #f5673b; /* Color de fondo al pasar el cursor sobre el botón */
+    transform: scale(1.05); /* Escala el botón ligeramente al pasar el cursor */
+}
+
+.notification-button svg {
+    width: 60%; /* Ancho del SVG dentro del botón de notificación */
+    height: 60%; /* Altura del SVG dentro del botón de notificación */
+}
+
+.Volver {
+    position: relative; /* Posicionamiento absoluto */
+    top: 10px; /* Espacio desde la parte superior */
+    right: 10px; /* Espacio desde la parte derecha */
+}
+
+.Volver button {
+    background-color: #f46feb; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno del botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    font-family: 'Ubuntu', sans-serif; /* Fuente del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+.Volver button:hover {
+    background-color: #f46feb; /* Color de fondo al pasar el cursor */
+}
+
+.Volver button:active {
+    background-color: #f46feb; /* Color de fondo al hacer clic */
+}
